@@ -1,0 +1,557 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* **********************
+ Common css start
+ ********************* */
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+/* **********************
+ Common css  End
+ ********************* */
+/* **********************
+ nav-bar start
+ ********************* */
+#nav {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.44);
+  position: absolute;
+}
+#nav .nav-part {
+  width: 100%;
+  display: flex;
+  padding: 33px 0;
+}
+
+#nav .nav-part .logo {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+#nav .nav-part .menu {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#nav .nav-part .menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav .nav-part .menu ul li {
+  cursor: pointer;
+}
+#nav .nav-part .menu ul li a {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  transition: 0.5s;
+  margin-left: 44px;
+}
+#nav .nav-part .menu ul li a:hover {
+  color: #28b8d8;
+}
+/* **********************
+ nav-bar End
+ ********************* */
+
+/* **********************
+  Banner start
+ ********************* */
+#banner-part {
+  width: 100%;
+  background: url(../images/banner.jpg) no-repeat center;
+  padding: 331px 0 252px;
+  background-size: cover;
+}
+#banner-part .text {
+  text-align: center;
+}
+#banner-part .text h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+#banner-part .text h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 40px;
+  font-weight: 300;
+  color: #fff;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+#banner-part .text p {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* **********************
+  Banner End
+ ********************* */
+
+/* **********************
+   service start
+ ********************* */
+#service {
+  width: 100%;
+  background: #f9f9f9;
+}
+#service .container .title {
+  width: 100%;
+  text-align: center;
+}
+#service .container .title h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+  font-weight: 300;
+  color: #444444;
+  padding: 80px 0 30px;
+}
+#service .container .title p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  padding-bottom: 80px;
+}
+#service .container .title h3 {
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #444444;
+  padding-bottom: 30px;
+}
+#service .container .card-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 84px;
+}
+#service .container .card-main .card {
+  width: 368px;
+  background: #ffffff;
+  padding: 15px;
+  border: 1px solid #e3e3e3;
+}
+#service .container .card-main .card .text {
+  text-align: center;
+}
+#service .container .card-main .card .text h3 {
+  font-family: "Roboto slab", serif;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 26px 0 16px;
+  color: #444444;
+}
+#service .container .card-main .card .text p {
+  font-family: "Roboto", serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 13px;
+  color: #666666;
+  width: 300px;
+}
+
+/* **********************
+  service End
+ ********************* */
+
+/* **********************
+  gerllery_part start
+ ********************* */
+#gellery-part {
+  width: 100%;
+  padding: 51px 0 49px;
+  background: #2c2c2c;
+  border-bottom: 1px solid #e3e3e3;
+}
+#gellery-part .title {
+  text-align: center;
+}
+#gellery-part .title h2 {
+  color: #d5d5d5;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+.title h2::before {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background: #535353;
+  position: absolute;
+  top: 50%;
+  left: -115px;
+  transform: translateY(-50%);
+}
+.title h2::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background: #535353;
+  position: absolute;
+  top: 50%;
+  right: -115px;
+  transform: translateY(-50%);
+}
+
+#gellery-part .card-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 44px 0 60px;
+}
+
+#gellery-part .card-main .card {
+  width: 25%;
+}
+
+#gellery-part .card-main .card img {
+  width: 100%;
+}
+
+#gellery-part .btn {
+  text-align: center;
+}
+#gellery-part .btn a {
+  border: 1px solid #797979;
+  color: #a6a6a6;
+  padding: 16px 34px 16px 0;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-transform: uppercase;
+}
+#gellery-part .btn a i {
+  padding-left: 20px;
+  padding-right: 7px;
+}
+
+/* **********************
+  gerllery_part End
+ ********************* */
+
+/* **********************
+  jurnal_part start
+ ********************* */
+#jurnal_part {
+  width: 100%;
+  background: #f9f9f9;
+}
+#jurnal_part .title {
+  text-align: center;
+  padding: 83px 0 30px;
+}
+#jurnal_part .title h2 {
+  color: #535353;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+.title h2::before {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background: #d9d9d9;
+  position: absolute;
+  top: 50%;
+  left: -115px;
+  transform: translateY(-50%);
+}
+.title h2::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background: #d9d9d9;
+  position: absolute;
+  top: 50%;
+  right: -115px;
+  transform: translateY(-50%);
+}
+
+#jurnal_part .card-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#jurnal_part .card-main .card2 {
+  width: 368px;
+  padding: 25px 0 24px;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+}
+#jurnal_part .card-main .card2 .text-t {
+  text-align: center;
+  padding: 0px 50px 22px 50px;
+}
+#jurnal_part .card-main .card2 .text-t h3 {
+  font-family: "Roboto slab", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #444444;
+}
+#jurnal_part .card-main .card2 .text-t p {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #999999;
+  margin: 12px 0 0px;
+}
+#jurnal_part .card-main .card2 .text-b p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  padding: 26px 31px 0 26px;
+}
+#jurnal_part .card-main .card2 .text-b .btn {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 23px 33px 0 26px;
+}
+#jurnal_part .card-main .card2 .text-b .btn a {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #999999;
+  border-bottom: 1px solid #28b8d8;
+  padding-bottom: 5px;
+}
+#jurnal_part .card-main .card2 .text-b .btn .icon {
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #999999;
+}
+
+/* **********************
+  jurnal_part End
+ ********************* */
+
+/* **********************
+  about_part  start
+ ********************* */
+
+#about_part {
+  width: 100%;
+  background: #f9f9f9;
+  padding: 79px 0 80px;
+}
+
+#about_part .about_us {
+  width: 100%;
+  display: flex;
+}
+#about_part .about_us .left {
+  width: 50%;
+
+  margin-right: 15px;
+}
+
+#about_part .about_us .left .About_title {
+  padding-bottom: 30px;
+}
+#about_part .about_us .left .About_title h2 {
+  color: #444444;
+  font-size: 18px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+#about_part .about_us .left .About_title h2::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background: #d9d9d9;
+  top: 50%;
+  right: -115px;
+  transform: translateY(-50%);
+  display: block;
+}
+
+#about_part .about_us .left .ditails {
+  width: 100%;
+
+  display: flex;
+}
+#about_part .about_us .left .ditails .img {
+  width: 100%;
+}
+
+#about_part .about_us .left .ditails .content p {
+  color: #666666;
+  font-size: 18px;
+  font-family: "Roboto slab", sans-serif;
+  font-weight: 300;
+  padding: 0 7px 23px 26px;
+  display: block;
+}
+#about_part .about_us .left .ditails .content span {
+  color: #666666;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+
+  padding-left: 26px;
+  display: block;
+}
+
+#about_part .about_us .right {
+  width: 50%;
+  margin-left: 15px;
+}
+#about_part .about_us .right .About_title {
+  padding-bottom: 26px;
+}
+
+#about_part .about_us .right .About_title h2 {
+  color: #444444;
+  font-size: 18px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+#about_part .about_us .right .About_title h2::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background: #d9d9d9;
+  top: 50%;
+  right: -115px;
+  transform: translateY(-50%);
+  display: block;
+}
+
+#about_part .about_us .right .ditails {
+  width: 100%;
+  display: flex;
+}
+#about_part .about_us .right .ditails .icon {
+  padding-left: 6px;
+}
+#about_part .about_us .right .ditails .content {
+  padding: 0 0 25px 33px;
+}
+#about_part .about_us .right .ditails .content h3 {
+  font-family: "Roboto Slab", serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #444444;
+  padding-bottom: 17px;
+}
+#about_part .about_us .right .ditails .content p {
+  font-family: "Roboto", serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+}
+
+/* **********************
+  about_part End
+ ********************* */
+
+/* **********************
+ contact_part  start
+ ********************* */
+#contact_part{
+    width: 100%;
+    background: #373737;
+    padding: 68px 0 65px;
+}
+#contact_part .main-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#contact_part .main-card .contact-card{
+width: 24%;
+
+color: #cacaca;
+}
+#contact_part .main-card .contact-card  .icon{
+    display: flex;
+    justify-content: baseline;
+}
+#contact_part .main-card .contact-card  .icon i>i{
+ padding-bottom: 38px;
+}
+#contact_part .main-card .contact-card .icon p{
+    padding: 0 0 14px 16px;
+    }
+
+#contact_part .main-card .contact-card h2{
+   padding-bottom: 25px;
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: 700;
+}
+#contact_part .main-card .contact-card p{
+padding-bottom: 35px;
+font-family: "roboto Condensed";
+font-size: 14px;
+font-weight: 400;
+}
+
+#contact_part .main-card .contact-card .pp p{
+padding-bottom: 13px;
+}
+#contact_part .main-card .contact-card .pp span{
+    font-family: "roboto";
+    font-size: 12px;
+    font-weight: 400;
+    color: #929292;
+    padding-bottom: 31px;
+}
+
+/* **********************
+ contact_part  End
+ ********************* */
+/* **********************
+footer start
+ ********************* */
+
+ #footer{
+    width: 100%;
+    background: #333333;
+ }
+ #footer p{
+    font-family: "roboto";
+    font-size: 14px;
+    font-weight: 400;
+    color: #cacaca;
+    padding: 40px 0 36px;
+ }
+/* **********************
+footer End
+ ********************* */
